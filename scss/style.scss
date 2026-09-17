@@ -1,0 +1,111 @@
+body {
+font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, Sans-serif;
+color: #333;
+}
+
+header {
+    background-color: #fff;
+
+    .logo-container {
+        
+    }
+}
+
+.main-visual-wrapper {
+    background-color: aqua;
+}
+
+.global-nav-wrapper {
+    background-color: bisque;
+
+    .global-nav-conainer {
+        ul {
+            li {
+
+            }
+        }
+    }
+}
+
+.concept-wrapper {
+    background-color: blueviolet;
+
+    .concept-container {
+
+        .concept-image {
+
+        }
+
+        .concept-text {
+
+            .concept-subtitle {
+                
+            }
+
+            .concept-title {
+
+            }
+
+            .concept-description {
+
+            }
+        }
+    }
+}
+
+.blog-wrapper {
+    background-color: brown;
+
+    .blog-container {
+
+        .blog-title {
+
+        }
+
+        .blog-subtitle {
+        
+        }
+
+        .blog-list {
+
+            .blog-item-container {
+
+                .blog-image {
+
+                }
+
+                .blog-title {
+
+                }
+
+                .blog-date {
+
+                }
+            }
+
+            .to-blogs-container {
+
+                .to-blogs {
+
+                }
+
+                .arrow {
+
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    background-color: chartreuse;
+
+    .logo {
+
+    }
+
+    .copyright {
+
+    }
+}
