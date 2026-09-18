@@ -1,108 +1,187 @@
+$color-main: #24a8bf;
+
+@mixin section-title {
+    color: $color-main;
+    font-size: 32px;
+    font-weight: bold;
+}
+
 body {
 font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, Sans-serif;
+font-size: 16px;
 color: #333;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
 header {
-    background-color: #fff;
+    padding: 50px 0;
 
     .logo-container {
-        
+        width: 280px;
+        margin: 0 auto;
     }
 }
 
 .main-visual-wrapper {
-    background-color: aqua;
+    text-align: center;
 }
 
 .global-nav-wrapper {
-    background-color: bisque;
+    margin: 40px 0;
 
-    .global-nav-conainer {
+    .global-nav-container {
         ul {
+            display: flex;
+            justify-content: center;
+            
             li {
-
+                font-size: 18px;
+                line-height: 1;
+                letter-spacing: 0.1em;
+                margin-right: 80px;
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }
 }
 
-.concept-wrapper {
-    background-color: blueviolet;
+.main-wrapper {
+    padding: 0 30px;
 
     .concept-container {
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
 
         .concept-image {
-
+            width: 50%;
         }
 
         .concept-text {
+            width: 50%;
+            margin-left: 40px;
 
             .concept-subtitle {
-                
+                font-size: 16px;
+                margin-bottom: 20px;
+
             }
 
             .concept-title {
-
+                @include section-title;
+                margin-bottom: 30px;
             }
 
             .concept-description {
-
+                font-size: 16px;
+                letter-spacing: 0.1em;
+                line-height: 1.8;
             }
         }
     }
-}
 
-.blog-wrapper {
-    background-color: brown;
+    .blog-wrapper {
+        margin: 50px auto;
 
-    .blog-container {
+        .blog-container {
 
-        .blog-title {
-
-        }
-
-        .blog-subtitle {
-        
-        }
-
-        .blog-list {
-
-            .blog-item-container {
-
-                .blog-image {
-
-                }
+            .blog-heading {
+                text-align: center;
+                margin-bottom: 30px;
 
                 .blog-title {
-
+                    @include section-title;
                 }
 
-                .blog-date {
-
+                .blog-subtitle {
+                    font-size: 13px;
+                    margin-top: 8px;
                 }
             }
 
-            .to-blogs-container {
+            .blog-list {
 
-                .to-blogs {
+                .blog-item-container {
+                    display: flex;
+                    flex-wrap: wrap;
 
+                    .blog-item {
+                        width: calc( (100% - 60px)/3 );
+                        margin-right: 30px;
+                        margin-bottom: 30px;
+                        &:nth-child(3n) {
+                            margin-right: 0;
+                        }
+
+                        .blog-image {
+
+                        }
+
+                        .blog-title {
+                            font-size: 15px;
+                        }
+
+                        .blog-date {
+                            font-size: 13px;
+                        }
+                    }
+                    
                 }
 
-                .arrow {
+                .to-blogs-button {
+                    border: 1px solid #24a8bf;
+                    border-radius: 3px;
+                    color: $color-main;
+                    display: block;
+                    width: 220px;
+                    font-size: 15px;
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 0 auto;
+                    padding: 18px 0;
+                    position: relative;
 
+                    &::after {
+                        background-image: url("../images/icon_arrow-right.jpg");
+                        background-repeat: no-repeat;
+                        background-size: 5px 9px;
+                        display: block;
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        right: 1em;
+                        width: 5px;
+                        height: 9px;
+                        transform: translateY(-50%);
+
+                    }
                 }
             }
         }
     }
-
 }
 
 footer {
     background-color: chartreuse;
-
+    margin: 0 auto;
     .logo {
-
+        width: 180px;
+        margin: 0 auto;
     }
 
     .copyright {
