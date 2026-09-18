@@ -6,6 +6,7 @@
 
     <title>Sky Coffee</title>
 
+    <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,14 +19,14 @@
         </div>
     </header>
 
-    <section class="main-visual-wrapper">
+    <div class="main-visual-wrapper">
         <picture>
             <source media="(min-width: 768px)" srcset="images/pc_main-visual.jpg">
             <img src="images/sp_main-visual.jpg" alt="複数の青いカップのコーヒー">
         </picture>
-    </section>
+    </div>
 
-    <section class="global-nav-wrapper">
+    <div class="global-nav-wrapper">
         <div class="global-nav-container">
             <ul>
                 <li><a href="#">menu</a></li>
@@ -33,48 +34,86 @@
                 <li><a href="#">access</a></li>
             </ul>
         </div>
-    </section>
+    </div>
 
-    <section class="concept-wrapper">
+    <div class="main-wrapper">
         <div class="concept-container">
             <div class="concept-image">
-                <img src="images/concept.jpg">
+                <img src="images/concept.jpg" alt="青いカップのコーヒー" width="750" height="759">
             </div>
             <div class="concept-text">
-                <div class="concept-subtitle">Concept</h1>
+                <div class="concept-subtitle">Concept</div>
                 <h2 class="concept-title">心静かにコーヒーを</h2>
-                <p class="description">
+                <p class="concept-description">
                     立ち止まって、<br>
                     空の青さを眺めて、<br>
                     一息つきましょう
                 </p>
             </div>
         </div>
-    </section>
 
-    <section class="blog-wrapper">
-        <div class="blog-container">
-            <h2 class="blog-title">blog</h2>
-            <div class="blog-subtitle">ブログ</div>
-        </div>
-        <div class="blog-list">
-            <div class="blog-item-container">
-                <article class="blog-item">
-                    <a href="#">
-                        <img class="blog-image" src="images/thumbnail01.jpg">
-                        <p class="blog-title">ブログタイトル</p>
-                        <span class="blog-date">2026-00-00</span>
-                    </a>
-                </article>
+        <div class="blog-wrapper">
+            <div class="blog-container">
+                <div class="blog-heading">
+                    <h2 class="blog-title">blog</h2>
+                    <div class="blog-subtitle">ブログ</div>
+                </div>
+                <div class="blog-list">
+                    <div class="blog-item-container">
+                        <article class="blog-item">
+                            <a href="#">
+                                <img class="blog-image" src="images/thumbnail01.jpg">
+                                <h3 class="blog-title">ブログタイトル</p>
+                                <span class="blog-date">2026-00-00</span>
+                            </a>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#">
+                                <img class="blog-image" src="images/thumbnail02.jpg">
+                                <h3 class="blog-title">ブログタイトル</p>
+                                <span class="blog-date">2026-00-00</span>
+                            </a>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#">
+                                <img class="blog-image" src="images/thumbnail03.jpg">
+                                <h3 class="blog-title">ブログタイトル</p>
+                                <span class="blog-date">2026-00-00</span>
+                            </a>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#">
+                                <img class="blog-image" src="images/thumbnail04.jpg">
+                                <h3 class="blog-title">ブログタイトル</p>
+                                <span class="blog-date">2026-00-00</span>
+                            </a>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#">
+                                <img class="blog-image" src="images/thumbnail05.jpg">
+                                <h3 class="blog-title">ブログタイトル</p>
+                                <span class="blog-date">2026-00-00</span>
+                            </a>
+                        </article>
+                        <article class="blog-item">
+                            <a href="#">
+                                <img class="blog-image" src="images/thumbnail06.jpg">
+                                <h3 class="blog-title">ブログタイトル</p>
+                                <span class="blog-date">2026-00-00</span>
+                            </a>
+                        </article>
+                    </div>
+                        <a class="to-blogs-button" href="#">ブログ一覧</a>
+                </div>
             </div>
-            <div class="to-blogs-container">
-                to-blogs
-            </div>
         </div>
-    </section>
+    </div>
 
     <footer>
-
+        <div class="footer-logo-container">
+            <img class="logo" src="images/logo-white.png" alt="Sky Coffee">
+        </div>
+        <p class="copyright">&copy;Sky Coffee</p>
     </footer>
 </body>
 </html>

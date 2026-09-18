@@ -1,2 +1,3 @@
 # Sassを使うのでcssフォルダはアップしない
-css/
+style.css
+style.css.map
