@@ -6,10 +6,23 @@ $color-main: #24a8bf;
     font-weight: bold;
 }
 
+$bp_sp: 767px;
+
+@mixin mq($bp) {
+    @media (max-width: ($bp)) {
+        @content;
+    }
+}
+
 body {
 font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, Sans-serif;
 font-size: 16px;
 color: #333;
+
+    @include mq($bp_sp) {
+        font-size: 15px;
+        line-height: 1.7;
+    }
 }
 
 li {
@@ -29,9 +42,17 @@ img {
 header {
     padding: 50px 0;
 
+    @include mq($bp_sp) {
+        padding: 30px 0;
+    }
+
     .logo-container {
         width: 280px;
         margin: 0 auto;
+
+        @include mq($bp_sp) {
+            width: 172px;
+        }
     }
 }
 
@@ -67,6 +88,10 @@ header {
         display: flex;
         align-items: center;
         margin: 50px auto;
+
+        @include mq($bp_sp) {
+            flex-direction: column;
+        }
 
         .concept-image {
             width: 50%;
@@ -120,10 +145,21 @@ header {
                     display: flex;
                     flex-wrap: wrap;
 
+                    @include mq($bp_sp) {
+                    display: block;
+                }
+
                     .blog-item {
                         width: calc( (100% - 60px)/3 );
                         margin-right: 30px;
                         margin-bottom: 30px;
+
+                        @include mq($bp_sp) {
+                            width: 100%;
+                            margin-right: 0;
+                            margin-bottom: 20px;
+                        }
+
                         &:nth-child(3n) {
                             margin-right: 0;
                         }
@@ -140,7 +176,6 @@ header {
                             font-size: 13px;
                         }
                     }
-                    
                 }
 
                 .to-blogs-button {
@@ -155,6 +190,10 @@ header {
                     margin: 0 auto;
                     padding: 18px 0;
                     position: relative;
+
+                    @include mq($bp_sp) {
+                        width: 100%;
+                    }
 
                     &::after {
                         background-image: url("../images/icon_arrow-right.jpg");
@@ -181,14 +220,27 @@ footer {
     width: 100%;
     text-align: center;
 
+    @include mq($bp_sp) {
+        padding: 60px 0 20px;
+    }
+
     .logo {
         width: 180px;
         margin: 0 auto;
+
+        @include mq(bp_sp) {
+            width: 100px;
+            margin-bottom: 40px;
+        }
     }
 
     .copyright {
         font-size: 12px;
         letter-spacing: 0.05em;
-        color: #8b8b8b
+        color: #8b8b8b;
+
+        @include mq($bp_sp){
+            font-size: 10px;
+        }
     }
 }
