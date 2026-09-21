@@ -177,14 +177,18 @@ header {
 }
 
 footer {
-    background-color: chartreuse;
-    margin: 0 auto;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+
     .logo {
         width: 180px;
         margin: 0 auto;
     }
 
     .copyright {
-
+        font-size: 12px;
+        letter-spacing: 0.05em;
+        color: #8b8b8b
     }
 }
